@@ -164,35 +164,35 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-/* Disable Right Click */
-document.addEventListener('contextmenu', function (e) {
-    e.preventDefault();
-});
+// /* Disable Right Click */
+// document.addEventListener('contextmenu', function (e) {
+//     e.preventDefault();
+// });
 
-/* Disable common DevTools keys */
-document.addEventListener('keydown', function (e) {
+// /* Disable common DevTools keys */
+// document.addEventListener('keydown', function (e) {
 
-    // F12
-    if (e.keyCode === 123) {
-        e.preventDefault();
-        return false;
-    }
+//     // F12
+//     if (e.keyCode === 123) {
+//         e.preventDefault();
+//         return false;
+//     }
 
-    // Ctrl+Shift+I / J / C
-    if (e.ctrlKey && e.shiftKey && ['I', 'J', 'C'].includes(e.key.toUpperCase())) {
-        e.preventDefault();
-        return false;
-    }
+//     // Ctrl+Shift+I / J / C
+//     if (e.ctrlKey && e.shiftKey && ['I', 'J', 'C'].includes(e.key.toUpperCase())) {
+//         e.preventDefault();
+//         return false;
+//     }
 
-    // Ctrl+U (View Source)
-    if (e.ctrlKey && e.key.toUpperCase() === 'U') {
-        e.preventDefault();
-        return false;
-    }
+//     // Ctrl+U (View Source)
+//     if (e.ctrlKey && e.key.toUpperCase() === 'U') {
+//         e.preventDefault();
+//         return false;
+//     }
 
-    // Ctrl+S (Save Page)
-    if (e.ctrlKey && e.key.toUpperCase() === 'S') {
-        e.preventDefault();
-        return false;
-    }
-});
+//     // Ctrl+S (Save Page)
+//     if (e.ctrlKey && e.key.toUpperCase() === 'S') {
+//         e.preventDefault();
+//         return false;
+//     }
+// });

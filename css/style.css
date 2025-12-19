@@ -466,7 +466,7 @@ a {
     margin-bottom: 2rem;
 }
 .turf-details-area .turf-left .about-box p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     line-height: 2.5rem;
 }
 /*turf Details CSS*/
@@ -566,6 +566,7 @@ a {
 }
 .cart-area .cart-left .cart-form input {
     width: 100%;
+    outline: none;
     font-size: 1.6rem;
     padding: 1.2rem 2rem;
     border: 1px solid #E4E4E4;
