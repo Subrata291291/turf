@@ -123,6 +123,7 @@ a {
     background-size: cover;
     padding: 22.8rem 0rem 6rem;
     position: relative;
+    overflow: hidden;
 }
 .banner-area h2 {
     font-size: 7.6rem;
@@ -209,13 +210,30 @@ a {
 /*Banner CSS*/
 
 /*Popular CSS*/
-.popular-area {
+.about-area {
     padding: 8rem 0rem;
     background: url(../images/play-bg.svg) no-repeat;
     background-position: center;
     background-size: cover;
 }
-.popular-area .turf-box h3 {
+.about-area .title-box {
+    margin-bottom: 8rem;
+}
+.about-area .about-right {
+    margin-left: 3rem;
+}
+.about-area .about-left img {
+    border-radius: 0.5rem;
+}
+.about-area .about-right h3 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.about-area .about-right p {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+/* .popular-area .turf-box h3 {
     font-size: 2.8rem;
     color: var(--ss-primary);
 }
@@ -252,7 +270,7 @@ a {
 .popular-area .turf-pic img:hover {
     transform: scale(1.1);
     transition: all 0.3s;
-}
+} */
 /*Popular CSS*/
 
 /*Video CSS*/
@@ -1177,6 +1195,13 @@ a {
     .my-account-area .my-account-right .edit-box .save-box button {
         margin-top: 1rem;
     }
+    .about-area .about-right {
+        margin-left: 0rem;
+        margin-top: 2rem;
+    }
+    .about-area .title-box {
+        margin-bottom: 5rem;
+    }
 }
 @media screen and (min-width: 992px) {
 
@@ -1345,6 +1370,16 @@ a {
     }
     .my-account-area {
         padding: 4.5rem 0rem;
+    }
+    .about-area {
+        padding: 4.5rem 0rem;
+    }
+    .about-area .title-box {
+        margin-bottom: 3rem;
+    }
+    .about-area .about-right h3 {
+        font-size: 2.4rem;
+        margin-bottom: 1rem;
     }
 }
 @media screen and (max-width: 575px) {
