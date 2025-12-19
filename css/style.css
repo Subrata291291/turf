@@ -1,0 +1,1299 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --ss-poppins: "Poppins", sans-serif;
+  --ss-kaushan: "Kaushan Script";
+  --ss-font500: 500;
+  --ss-font600: 600;
+  --ss-font700: 700;
+  --ss-font800: 800;
+  --ss-fontbold: bold;
+  --ss-primary: #1CFF00;
+  --ss-secondary: #1cff00c7;
+}
+
+body {
+  font-family: var(--ss-poppins);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  color: #000;
+}
+
+ul, li, p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title-box {
+    margin-bottom: 4rem;
+}
+.title-box h3 {
+    font-size: 4.6rem;
+    font-weight: 500;
+}
+.title-box h3 span {
+    color: var(--ss-primary);
+}
+.title-box p {
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+}
+
+/*Header CSS*/
+.header-area {
+    position: absolute;
+    width: 100%;
+    top: 4rem;
+    z-index: 9;
+}
+.header-area .header-box {
+    position: relative;
+    background-color: #fff;
+    padding: 3rem 6.3rem;
+    border-radius: 2rem;
+}
+.header-area .header-box .header-left ul {
+    gap: 3rem;
+}
+.header-area .header-box .header-left ul li a {
+    color: #000;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.header-area .header-box .header-left ul li a:hover {
+    color: var(--ss-primary);
+}
+.header-area .header-box .header-left ul li a.active {
+    color: var(--ss-primary);
+}
+.header-area .header-middle {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -8%);
+}
+.header-area .header-right ul .social-icons {
+   gap: 3rem; 
+}
+.header-area .header-right ul .social-icons a {
+    font-size: 2rem;
+    color: #000;
+}
+.header-area .header-right ul {
+    gap: 4rem;
+    justify-content: end;
+}
+.header-area .header-right ul li a {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #000;
+}
+.header-area .header-right ul li a:hover {
+    color: var(--ss-primary);
+}
+.header-area .header-right ul li a span {
+    padding-right: 0.5rem;
+}
+/*Header CSS*/
+
+/*Banner CSS*/
+.banner-area {
+    background: url(../images/banner-bg.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 22.8rem 0rem 6rem;
+    position: relative;
+}
+.banner-area h2 {
+    font-size: 7.6rem;
+    font-family: var(--ss-kaushan);
+    color: #fff;
+}
+.banner-area h2 span {
+    color: var(--ss-primary);
+}
+.banner-area p {
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: #fff;
+    margin: 1.5rem 0rem 4.5rem;
+}
+.banner-area:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000c7;
+}
+.banner-area .banner-box {
+    position: relative;
+}
+.banner-area .banner-box .common-btn {
+    font-size: 2rem;
+    font-weight: 500;
+    border: none;
+    background-color: var(--ss-primary);
+    width: 20rem;
+    height: 6rem;
+    border-radius: 5rem;
+}
+.banner-area .banner-box .common-btn:hover {
+    background-color: var(--ss-secondary);
+}
+.banner-area .banner-box ul {
+    margin-top: 14.5rem;
+    gap: 5rem;
+}
+.banner-area .banner-pic-1 {
+    bottom: 10rem;
+    left: 0rem;
+}
+.banner-area .banner-pic-2 {
+    bottom: 10rem;
+    right: 0rem;
+}
+/*Banner CSS*/
+
+/*Popular CSS*/
+.popular-area {
+    padding: 8rem 0rem;
+    background: url(../images/play-bg.svg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.popular-area .turf-box h3 {
+    font-size: 2.8rem;
+    color: var(--ss-primary);
+}
+.popular-area .turf-box h3 span {
+    color: #000;
+    font-size: 1.6rem;
+    vertical-align: middle;
+    line-height: 24px;
+}
+.popular-area .turf-box .common-btn {
+    width: 12rem;
+    height: 3.9rem;
+    border: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    background-color: var(--ss-primary);
+}
+.popular-area .turf-box .common-btn:hover {
+    background-color: var(--ss-secondary);
+}
+.popular-area .turf-box ul {
+    padding: 2rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0rem 0rem 0.5rem 0.5rem;
+}
+.popular-area .turf-pic {
+    overflow: hidden;
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+}
+.popular-area .turf-pic img {
+    transition: all 0.3s;
+}
+.popular-area .turf-pic img:hover {
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+/*Popular CSS*/
+
+/*Video CSS*/
+.video-area {
+    background: url(../images/play-bg.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 24rem 0rem;
+    position: relative;
+}
+.video-area:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000c7;
+}
+.video-area .play-box {
+    position: relative;
+}
+.video-area .play-box h4 {
+    margin-top: 2rem;
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+.video-area .play-box #play-btn {
+    border: none;
+    background-color: transparent;
+}
+.video-modal .btn-close {
+    opacity: 1;
+    top: -1rem;
+    right: -1rem;
+    background-color: var(--ss-primary);
+    padding: 1rem;
+    color: #fff;
+    border-radius: 5rem;
+    font-size: 1rem;
+}
+.video-modal .modal-dialog {
+    margin: 0 auto;
+}
+/*Video CSS*/
+
+/*Gallery CSS*/
+.gallery-area {
+    padding: 8rem 0rem;
+    background: url(../images/play-bg.svg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/*Footer CSS*/
+.footer-area {
+    background: url(../images/banner-bg.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 15rem 0rem 5rem;
+    position: relative;
+}
+.footer-area:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000b8;
+}
+.footer-box {
+    position: relative;
+}
+.footer-area p {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    color: #fff;
+}
+.footer-area p span {
+    color: var(--ss-primary);
+}
+/*Footer CSS*/
+
+/*Common Banner CSS*/
+.common-banner-area {
+    background: url(../images/comon-bg.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 25.6rem 0rem 10rem;
+    position: relative;
+}
+.common-banner-area .common-box {
+    position: relative;
+}
+.common-banner-area:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000ad;
+}
+.common-banner-area .common-box ul {
+    gap: 1rem;
+}
+.common-banner-area .common-box ul li a {
+    color: #fff;
+    font-size: 1.8rem;
+}
+.common-banner-area .common-box ul li {
+    color: #fff;
+}
+.common-banner-area .common-box ul li a.active {
+    color: var(--ss-primary);
+}
+/*Common Banner CSS*/
+
+/*turf Details CSS*/
+.turf-details-area {
+    padding: 7rem 0rem;
+}
+.turf-details-area .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    color: #fff;
+}
+.turf-details-area .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+   color: #fff; 
+}
+.turf-details-area .swiper-pagination-bullet-active {
+    background: #fff;
+}
+.turf-right .timing-box h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.turf-details-area .turf-right {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 76rem;
+    margin-left: auto;
+}
+.turf-details-area .turf-left {
+    max-width: 76rem;
+    margin-right: auto;
+}
+.turf-right .location-box h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.turf-details-area .turf-right .timing-box p {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+.turf-details-area .turf-right .timing-box {
+    padding: 2rem;
+    border: 1px solid #DEDEDE;
+    border-radius: 0.5rem;
+}
+.turf-details-area .turf-right .location-box p {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.turf-details-area .turf-right .location-box {
+    padding: 2rem;
+    border: 1px solid #DEDEDE;
+    border-radius: 0.5rem;
+}
+.turf-details-area .turf-right .location-box iframe {
+    height: 20rem;
+}
+.turf-details-area .turf-right .common-btn {
+    border: none;
+    background-color: var(--ss-primary);
+    border-radius: 5rem;
+    height: 6rem;
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+.turf-details-area .turf-right .common-btn:hover {
+    background-color: var(--ss-secondary);
+}
+.turf-details-area .turf-left .sport-box {
+    border: 1px solid #DEDEDE;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+.turf-details-area .turf-left .sport-box ul {
+    gap: 2rem;
+}
+.turf-details-area .turf-left .sport-box ul li {
+    border: 1px solid #DEDEDE;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+.turf-details-area .turf-left .sport-box ul li i {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+.turf-details-area .turf-left .sport-box ul li p {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.turf-details-area .turf-left .sport-box h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+.turf-details-area .turf-left .sport-box h3 span {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.turf-details-area .turf-left .sport-box {
+    margin-top: 5rem;
+}
+.turf-details-area .turf-left .amenities-box {
+    border: 1px solid #DEDEDE;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin: 2rem 0rem;
+}
+.turf-details-area .turf-left .amenities-box ul {
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+.turf-details-area .turf-left .amenities-box ul li span {
+    margin-right: 1rem;
+}
+.turf-details-area .turf-left .about-box {
+    border: 1px solid #DEDEDE;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+.turf-details-area .turf-left .about-box h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+.turf-details-area .turf-left .about-box p {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+}
+/*turf Details CSS*/
+
+/*Shop CSS*/
+.shop-area {
+    padding: 8rem 0rem;
+    background: url(../images/play-bg.svg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.shop-area .turf-box .turf-pic {
+    overflow: hidden;
+}
+.shop-area .turf-box .turf-pic img {
+    transition: 0.3s;
+    max-height: 31.5rem;
+    object-fit: cover;
+}
+.shop-area .turf-box .turf-pic:hover img {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.shop-area .turf-box .turf-pic p {
+    bottom: 0;
+    right: 0;
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    background-color: var(--ss-primary);
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+}
+.shop-area .turf-box ul li h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.shop-area .turf-box ul li i {
+    font-size: 2rem;
+    vertical-align: middle;
+}
+.shop-area .turf-box ul {
+    padding: 2rem;
+}
+.shop-area .turf-box {
+    border: 1px solid #A2A2A2;
+    border-radius: 0.5rem;
+}
+
+/*Cart page CSS*/
+.form-select:focus {
+    border-color: #E4E4E4;
+    outline: 0;
+    box-shadow: 0 0 0 .0rem rgba(13, 110, 253, .25);
+}
+.cart-area {
+    padding: 8rem 0rem;
+}
+.cart-area .cart-left {
+    max-width: 76rem;
+    margin-right: auto;
+}
+.cart-area .cart-left .cart-heading {
+    padding: 2rem;
+    border: 1px solid #E4E4E4;
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+}
+.cart-area .cart-form {
+    padding: 2rem;
+    border: 1px solid #E4E4E4;
+    border-radius: 0rem 0rem 0.5rem 0.5rem; 
+}
+.cart-area .cart-form .duration-box button {
+    border: none;
+    background-color: var(--ss-primary);
+    font-size: 2.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 5rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart-area .notify-box p {
+    font-size: 1.4rem;
+    background-color: var(--ss-primary);
+    padding: 1rem;
+    text-align: center;
+}
+.cart-area .cart-left .cart-heading h3 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+.cart-area .cart-left .cart-heading p {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+.cart-area .cart-left .cart-form input {
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 1.2rem 2rem;
+    border: 1px solid #E4E4E4;
+    border-radius: 0.5rem;
+}
+.cart-area .cart-left .cart-form select {
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 1.2rem 2rem;
+    border: 1px solid #E4E4E4;
+    border-radius: 0.5rem;
+}
+.cart-area .cart-left .cart-form ul {
+    width: 100%;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    padding: 0rem 2rem;
+}
+.cart-area .cart-left .cart-form .form-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+.cart-area .cart-left .cart-form .form-box label {
+    font-size: 1.6rem;
+}
+.cart-area .cart-left .cart-form .submit-btn {
+    border: none;
+    background-color:#E9E9E9;
+    height: 6rem;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-top: 2.4rem;
+}
+.cart-area .cart-left .cart-form .submit-btn.active {
+    background-color: var(--ss-primary);
+}
+.cart-area .cart-right {
+    max-width: 76rem;
+    margin-left: auto;
+}
+.cart-area .cart-right .cart-details-empty {
+    padding: 7rem;
+    border: 1px solid #E4E4E4;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cart-area .cart-right .cart-details-empty h3 {
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.cart-area .cart-right .cart-details-empty i {
+    font-size: 5rem;
+    color: #c0c0c0;
+}
+.cart-area .cart-right .cart-details {
+    padding: 2rem;
+    border: 1px solid #E4E4E4;
+    border-radius: 0.5rem;
+}
+.cart-area .cart-right .cart-details .cart-count {
+    font-weight: 600;
+}
+.cart-area .cart-right .cart-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+.cart-area .cart-right .cart-details ul li p span {
+    margin-right: 0.5rem;
+    font-size: 1.6rem;
+}
+.cart-area .cart-right .cart-details p {
+    font-size: 1.6rem;
+}
+.cart-area .cart-right .cart-details ul li button {
+    border: none;
+    background-color: transparent;
+}
+.cart-area .cart-right .cart-details ul li button i {
+    font-size: 2rem;
+    color: red;
+}
+.cart-area .cart-right .cart-details .discount-btn .common-btn {
+    border: none;
+    background-color: #E3E8E6;
+    height: 5rem;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+.cart-area .cart-right .cart-details .proceed-btn .common-btn {
+    border: none;
+    background-color: var(--ss-primary);
+    height: 5rem;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.cart-area .cart-right .cart-details .proceed-btn .common-btn:hover {
+    background-color: var(--ss-secondary);
+}
+/*Cart page CSS*/
+
+/*Checkout page CSS*/
+.checkout-area {
+    padding: 8rem 0rem;
+}
+.checkout-area .checkout-left {
+    max-width: 76rem;
+    margin-right: auto;
+}
+.checkout-area .checkout-right {
+    max-width: 76rem;
+    margin-left: auto;
+    padding: 2rem;
+    border: 1px solid #E4E4E4;
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+}
+.checkout-area .checkout-left .checkout-box .checkout-heading ul li h3 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+.checkout-area .checkout-left .checkout-box .checkout-heading ul li p {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+.checkout-area .checkout-left .checkout-box .checkout-heading ul li h4 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+.checkout-area .checkout-left .checkout-box .checkout-heading {
+    border-bottom: 1px solid #E4E4E4;
+    padding-bottom: 2rem;
+}
+.checkout-area .checkout-left .checkout-box {
+    padding: 2rem;
+    border: 1px solid #E4E4E4;
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+}
+.checkout-area .checkout-left .checkout-booking-details {
+    padding-top: 2rem; 
+}
+.checkout-area .checkout-left .checkout-booking-details ul li p {
+    font-size: 1.6rem;
+}
+.checkout-area .checkout-left .checkout-booking-details ul #clear-checkout {
+    color: red;
+    font-size: 2rem;
+    border: none;
+    background-color: transparent;
+}
+.checkout-area .checkout-left .checkout-booking-details ul li p span {
+    margin-right: 0.5rem;
+    font-size: 1.6rem;
+    vertical-align: middle;
+}
+.checkout-area .checkout-left .checkout-booking-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+.checkout-area .checkout-left .checkout-booking-details ul {
+    flex-wrap: wrap;
+    row-gap: 1rem;
+}
+.checkout-area .checkout-left .policy-box {
+    padding: 2rem;
+    border: 1px solid #E4E4E4;
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+    margin-top: 2rem;
+}
+.checkout-area .checkout-left .policy-box h4 {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.checkout-area .checkout-left .policy-box p {
+    font-size: 1.4rem;
+    color: #758A80;
+    margin-top: 1.5rem;
+    line-height: 2.5rem;
+}
+.checkout-area .checkout-right .price-details ul li p {
+    font-size: 1.6rem;
+}
+.checkout-area .checkout-right .price-details ul li p span {
+    margin-right: 1rem;
+    vertical-align: middle;
+}
+.checkout-area .checkout-right .price-details ul li h3 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+.checkout-area .checkout-right .price-details ul {
+    border-bottom: 1px solid #E4E4E4;
+    padding: 1.5rem 0rem;
+}
+.checkout-area .checkout-right .price-details ul:first-child {
+    padding: 0rem;
+    padding-bottom: 2rem;
+}
+.checkout-area .checkout-right .convenience-box p {
+    font-size: 1.6rem;
+}
+.checkout-area .checkout-right .convenience-box ul:first-child li p {
+    font-size: 1.8rem;
+}
+.checkout-area .checkout-right .convenience-box ul:first-child {
+    margin-bottom: 1rem;
+}
+.checkout-area .checkout-right .convenience-box ul:last-child {
+    margin-top: 1rem;
+}
+.checkout-area .checkout-right .convenience-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+.checkout-area .checkout-right .convenience-box ul:last-child li p {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.checkout-area .checkout-right .convenience-box .proceed-btn .common-btn {
+    border: none;
+    background-color: var(--ss-primary);
+    font-size: 1.8rem;
+    height: 6rem;
+    border-radius: 0.5rem;
+    margin-top: 3rem;
+    font-weight: 500;
+}
+.checkout-area .checkout-right .convenience-box .proceed-btn .common-btn:hover {
+    background-color: var(--ss-secondary);
+}
+.checkout-area .checkout-right .modal-body input {
+    width: 100%;
+    border: 1px solid #E4E4E4;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    outline: none;
+}
+.checkout-area .checkout-right .modal-body button {
+    border: none;
+    background-color: var(--ss-primary);
+    font-size: 1.6rem;
+    width: 10rem;
+    height: 4rem;
+    right: 1rem;
+    top: 50%;
+    transform: translate(0%, -10%);
+}
+.checkout-area .checkout-right .modal-body {
+    margin-top: 2rem;
+}
+.checkout-area .checkout-right .modal-title {
+    font-size: 1.6rem;
+}
+.checkout-area .checkout-right .modal-content {
+    padding: 1rem;
+}
+/*Checkout page CSS*/
+
+/*My Account page CSS*/
+.my-account-area {
+    padding: 8.5rem 0rem;
+}
+.my-account-area .my-account-left .account-details ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+.my-account-area .my-account-left .account-details ul li p {
+    font-size: 1.6rem;
+}
+.my-account-area .my-account-left .account-details ul li:first-child p {
+    font-weight: 600;
+}
+.my-account-area .my-account-left .account-details {
+    margin-bottom: 2rem;
+}
+.my-account-area .tab-content {
+    display: none;
+    margin-top: 20px;
+}
+.my-account-area .tab-content.active {
+    display: block;
+}
+.my-account-area .booking-box, .my-account-area .edit-box {
+    display: none;
+}
+.my-account-area .booking-box.active,
+.my-account-area .edit-box.active {
+    display: block;
+}
+.my-account-area .profile-menu li.active {
+    background: var(--ss-primary);
+    border-radius: 0.5rem;
+}
+.my-account-area .my-account-left .profile-menu li button {
+    border: none;
+    background-color: transparent;
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    width: 100%;
+    text-align: left;
+}
+.my-account-area .my-account-left {
+    border: 1px solid #E4E4E4;
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+.my-account-area .my-account-right {
+    margin-left: 4rem;
+    border: 1px solid #E4E4E4;
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+.my-account-area .my-account-right .booking-box .booking-tabs {
+    background-color: #F1F3F2;
+    display: block;
+    padding: 1rem;
+    border-radius: 0.5em;
+}
+.my-account-area .my-account-right .booking-box .booking-tabs .tab-btn.active {
+    background-color: var(--ss-primary);
+}
+.my-account-area .my-account-right .booking-box .booking-tabs .tab-btn {
+    font-size: 1.6rem;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    background-color: transparent;
+}
+.my-account-area .my-account-right .booking-box .booking-content {
+    padding: 0rem 2rem;
+}
+.my-account-area .my-account-right .edit-box label {
+    font-size: 1.4rem;
+}
+.my-account-area .my-account-right .edit-box input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border: 1px solid #E4E4E4;
+    margin-top: 1rem;
+    outline: none;
+}
+.my-account-area .my-account-right .edit-box .save-box {
+    text-align: right;
+}
+.my-account-area .my-account-right .edit-box .save-box button {
+    font-size: 1.6rem;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    background-color: var(--ss-primary);
+    margin-top: 2rem;
+}
+.my-account-area .my-account-right .edit-box .save-box button.reset-btn {
+    background-color: #ebebeb;
+}
+/*My Account page CSS*/
+
+/*Resposive CSS*/
+@media (min-width: 1700px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1580px;
+  }
+}
+@media (max-width: 1700px) {
+
+}
+@media (max-width: 1399px) {
+
+}
+@media (min-width: 1400px) {
+    .video-modal iframe {
+        height: 60rem;
+    }
+}
+@media (max-width: 1199px) {
+    .header-area .header-box {
+        padding: 3rem 2rem;
+    }
+    .header-area .header-box .header-left ul {
+        gap: 2rem;
+    }
+    .banner-area h2 {
+        font-size: 5rem;
+    }
+    .banner-area p {
+        font-size: 2rem;
+    }
+    .banner-area .banner-pic-1 {
+        max-width: 35rem;
+    }
+    .banner-area .banner-pic-2 {
+        max-width: 35rem;
+    }
+    .title-box h3 {
+        font-size: 3.6rem;
+    }
+    .turf-box h3 {
+        font-size: 1.8rem;
+    }
+    .popular-area .turf-box .common-btn {
+        width: 10rem;
+        height: 3.5rem;
+        font-size: 1.6rem;
+    }
+    .popular-area .turf-box h3 span {
+        font-size: 1.2rem;
+    }
+    .video-area {
+        padding: 11rem 0rem;
+    }
+    .video-modal iframe {
+        height: 40rem;
+    }
+    .video-area .play-box #play-btn img {
+        max-width: 80%;
+    }
+    .video-area .play-box h4 {
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+    .footer-area {
+        padding: 10rem 0rem 5rem;
+        margin-top: 0rem;
+    }
+    .common-banner-area {
+        padding: 21.6rem 0rem 6rem;
+    }
+    .turf-details-area .turf-right .location-box iframe {
+        height: inherit;
+    }
+    .turf-details-area .turf-right .location-box p {
+        font-size: 1.4rem;
+    }
+    .turf-details-area .turf-right .timing-box p {
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width: 991px) {
+    .header-area .header-box .header-left ul {
+        gap: 0.8rem;
+    }
+    .header-area .header-box .header-left ul li a {
+        font-size: 1.4rem;
+    }
+    .header-area .header-right ul {
+        gap: 1rem;
+    }
+    .header-area .header-right ul .social-icons {
+        gap: 2rem;
+    }
+    .header-area .header-right ul li a {
+        font-size: 1.4rem;
+    }
+    .header-area .header-right ul .social-icons a {
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+    }
+    .header-area .header-right ul {
+        justify-content: space-around;
+    }
+    .banner-area p {
+        font-size: 1.8rem;
+        margin: 1.5rem 0rem 2.5rem;
+    }
+    .banner-area .banner-pic-1 {
+        max-width: 28rem;
+    }
+    .banner-area .banner-pic-2 {
+        max-width: 28rem;
+    }
+    .footer-area {
+        padding: 7rem 0rem 3rem;
+    }
+    .shop-area .turf-box ul li h3 {
+        font-size: 1.6rem;
+    }
+    .shop-area .turf-box ul {
+        padding: 1.5rem;
+    }
+    .cart-area .cart-right .cart-details .discount-btn .common-btn {
+        height: 6rem;
+    }
+    .cart-area .cart-right .cart-details ul {
+        flex-wrap: wrap;
+        row-gap: 1rem;
+    }
+    .cart-area .cart-left .cart-form ul {
+        padding: 0rem 0rem;
+    }
+    .cart-area .cart-left .cart-form select {
+        padding: 1.2rem 1rem;
+    }
+    .cart-area .cart-left .cart-form input {
+        padding: 1.2rem 1rem;
+    }
+    .checkout-area .checkout-left .checkout-box .checkout-heading ul li h4 {
+        font-size: 1.8rem;
+    }
+    .checkout-area .checkout-left .checkout-box .checkout-heading ul li h3 {
+        font-size: 1.8rem;
+    }
+    .checkout-area .checkout-left .checkout-box .checkout-heading ul {
+        flex-wrap: wrap;
+        row-gap: 1rem;
+    }
+    .my-account-area .my-account-right {
+        margin-left: 0rem;
+    }
+    .my-account-area .my-account-right .edit-box .save-box button {
+        margin-top: 1rem;
+    }
+}
+@media screen and (min-width: 992px) {
+
+}
+@media screen and (min-width: 768px) {
+
+}
+@media screen and (max-width: 767px) {
+    .header-area .header-right ul {
+        justify-content: end;
+    }
+    .header-area {
+        top: 2rem;
+    }
+    .popular-area .turf-box ul {
+        padding: 1rem 1rem;
+    }
+    .popular-area .turf-box h3 {
+        margin-bottom: 1rem;
+    }    
+    .popular-area .turf-box .common-btn {
+        width: 100%;
+    }
+    .header-area .common-btn-mb {
+        border: none;
+        background-color: var(--ss-primary);
+        border-radius: 0.5rem;
+        width: 9rem;
+        height: 3rem;
+        font-weight: 500;
+    }
+    .banner-area {
+        padding: 15rem 0rem 4rem;
+    }
+    .header-area .header-middle {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -8%);
+    }
+    .header-area .header-middle img {
+        max-width: 80px;
+    }
+    .header-area .header-box {
+        padding: 2rem 2rem;
+        border-radius: 1rem;
+    }
+    .header-area .header-left .social-mb li {
+        gap: 2rem;
+    }
+    .header-area .header-box .header-left ul li a {
+        font-size: 1.6rem;
+    }
+    .header-area .header-right ul li a {
+        font-size: 1.6rem;
+    }
+    .title-box p {
+        font-size: 1.4rem;
+    }
+    .title-box h3 {
+        font-size: 2.2rem;
+    }
+    .popular-area {
+        padding: 4.5rem 0rem;
+    }
+    .gallery-area {
+        padding: 4.5rem 0rem;
+    }
+    .shop-area {
+        padding: 4.5rem 0rem;
+    }
+    .cart-area {
+        padding: 4.5rem 0rem;
+    }
+    .banner-area p {
+        font-size: 1.6rem;
+    }
+    .banner-area .banner-box .common-btn {
+        font-size: 1.8rem;
+        width: 17rem;
+        height: 5rem;
+    }
+    .banner-area .banner-pic-1 {
+        max-width: 20rem;
+        bottom: 6rem;
+    }
+    .banner-area .banner-pic-2 {
+        max-width: 20rem;
+        bottom: 6rem;
+    }
+    .banner-area .banner-box ul {
+        margin-top: 7.5rem;
+        gap: 2rem;
+    }
+    .banner-area h2 {
+        font-size: 4rem;
+    }
+    .video-area {
+        padding: 7rem 0rem;
+    }
+    .video-modal iframe {
+        height: 30rem;
+    }
+    .footer-area .footer-box img {
+        max-width: 9rem;
+    }
+    .common-banner-area {
+        padding: 15rem 0rem 4rem;
+    }
+    .video-area .play-box #play-btn img {
+        max-width: 65%;
+    }
+    .common-banner-area .common-box ul li a {
+        font-size: 1.6rem;
+    }
+    .turf-details-area {
+        padding: 2rem 0rem;
+    }
+    .turf-details-area .turf-slider {
+        margin-bottom: 2rem;
+    }
+    .turf-details-area .turf-right .common-btn {
+        font-size: 2rem;
+        height: 5rem;
+    }
+    .turf-details-area .turf-right .timing-box {
+        margin-top: 2rem;
+    }
+    .turf-details-area .turf-left .sport-box {
+        margin-top: 2rem;
+    }
+    .shop-area .turf-box ul li h3 {
+        font-size: 1.4rem;
+    }
+    .shop-area .turf-box .turf-pic p {
+        font-size: 1.6rem;
+        padding: 0.5rem 1rem;
+    }
+    .cart-area .cart-right .cart-details .discount-btn .common-btn {
+        height: 5rem;
+        font-size: 1.4rem;
+    }
+    .cart-area .cart-right {
+        margin-top: 2rem;
+    }
+    .checkout-area .checkout-right {
+        margin-top: 2rem;
+    }
+    .checkout-area {
+        padding: 4.5rem 0rem;
+    }
+    .checkout-area .checkout-right .convenience-box .proceed-btn .common-btn {
+        height: 5rem;
+    }
+    .checkout-area .checkout-left .checkout-box .checkout-heading ul li h3 {
+        font-size: 1.6rem;
+    }
+    .checkout-area .checkout-left .checkout-box .checkout-heading ul li h4 {
+        font-size: 1.6rem;
+    }
+    .checkout-area .checkout-right .price-details ul li h3 {
+        font-size: 1.8rem;
+    }
+    .my-account-area .my-account-right {
+        margin-top: 2rem;
+    }
+    .my-account-area {
+        padding: 4.5rem 0rem;
+    }
+}
+@media screen and (max-width: 575px) {
+    
+}
+@media screen and (max-width: 480px) {
+    .banner-area .banner-pic-1 {
+        max-width: 17rem;
+        bottom: 6rem;
+    }
+    .banner-area .banner-pic-2 {
+        max-width: 17rem;
+        bottom: 6rem;
+    }
+    .popular-area .turf-box h3 {
+        margin-bottom: 1rem;
+    }
+    .popular-area .turf-box .common-btn {
+        width: 100%;
+    }
+    .video-area {
+        padding: 5rem 0rem;
+    }
+    .footer-area {
+        padding: 5rem 0rem 2rem;
+    }
+}
+@media screen and (max-width: 375px) {
+    .banner-area .banner-pic-1 {
+        max-width: 15rem;
+        bottom: 5rem;
+        left: 1rem;
+    }
+    .banner-area .banner-pic-2 {
+        max-width: 15rem;
+        bottom: 5rem;
+        right: 1rem;
+    }
+}
