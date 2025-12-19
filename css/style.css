@@ -664,6 +664,27 @@ a {
     font-weight: 500;
     margin-top: 2rem;
 }
+.cart-area .cart-right .cart-details .discount-btn {
+    display: none;
+}
+.cart-area .cart-left .blink-text {
+    animation: greenBlink 1s infinite;
+}
+@keyframes greenBlink {
+    0% {
+        color: #1e7e34;
+        opacity: 1;
+    }
+    50% {
+        color: #6fdc8c;
+        opacity: 0.6;
+    }
+    100% {
+        color: #1e7e34;
+        opacity: 1;
+    }
+}
+
 .cart-area .cart-right .cart-details .proceed-btn .common-btn {
     border: none;
     background-color: var(--ss-primary);

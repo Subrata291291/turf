@@ -113,10 +113,50 @@ document.addEventListener("DOMContentLoaded", function () {
         updateButtonState();
     });
 });
+
+//Discount button show
+document.addEventListener("DOMContentLoaded", function () {
+
+    const decBtn = document.querySelector(".dec-btn");
+    const incBtn = document.querySelector(".inc-btn");
+    const durationText = document.querySelector(".duration");
+    const discountBox = document.querySelector(".discount-btn");
+
+    let duration = 1; // default 1 hour
+
+    function updateDurationUI() {
+        durationText.innerText = duration + " hr";
+
+        // Show discount only if 3 hours or more
+        if (duration >= 3) {
+            discountBox.style.display = "block";
+        } else {
+            discountBox.style.display = "none";
+        }
+    }
+
+    // Increase duration
+    incBtn.addEventListener("click", function () {
+        duration++;
+        updateDurationUI();
+    });
+
+    // Decrease duration (minimum 1 hour)
+    decBtn.addEventListener("click", function () {
+        if (duration > 1) {
+            duration--;
+            updateDurationUI();
+        }
+    });
+
+    // Initial state
+    updateDurationUI();
+});
 //Add to Cart Logic End
 
 
-//Tab Js for my accoun page
+
+//Tab Js for my account page
 document.addEventListener("DOMContentLoaded", function () {
     const tabs = document.querySelectorAll(".tab-btn");
     const contents = document.querySelectorAll(".tab-content");
