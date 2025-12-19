@@ -169,11 +169,43 @@ a {
 .banner-area .banner-pic-1 {
     bottom: 10rem;
     left: 0rem;
+    animation: floatTopBottom 8s ease-in-out infinite;
 }
 .banner-area .banner-pic-2 {
     bottom: 10rem;
     right: 0rem;
+    animation: floatTopBottom 6s ease-in-out infinite;
 }
+.banner-area .banner-box ul li:first-child img {
+    animation: floatLeftRight 8s ease-in-out infinite;
+}
+.banner-area .banner-box ul li:last-child img {
+    animation: floatLeftRight 8s ease-in-out infinite;
+}
+@keyframes floatTopBottom {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatLeftRight {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(25px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 /*Banner CSS*/
 
 /*Popular CSS*/
@@ -593,6 +625,32 @@ a {
 .cart-area .cart-left .cart-form .form-box label {
     font-size: 1.6rem;
 }
+.cart-area .cart-left .cart-form .form-box .available-slot p {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+.cart-area .cart-left .cart-form .form-box .available-slot ul {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: start;
+    row-gap: 3rem;
+    padding: 0rem;
+}
+.cart-area .cart-left .cart-form .form-box .available-slot ul li a {
+    color: #009f5c;
+    padding: 1rem;
+    font-size: 1.4rem;
+    background-color: #f1f5f8;
+    border-radius: 0.5rem;
+}
+.cart-area .cart-left .cart-form .form-box .available-slot {
+    display: none;
+}
+.cart-area .cart-left .cart-form .form-box .available-slot ul li.booked-slot a {
+    color: #000;
+    background-color: red;
+    border-radius: 0.5rem;
+}
 .cart-area .cart-left .cart-form .submit-btn {
     border: none;
     background-color:#E9E9E9;
@@ -769,12 +827,16 @@ a {
 .checkout-area .checkout-left .policy-box h4 {
     font-size: 1.6rem;
     font-weight: 500;
+    margin-bottom: 1.5rem;
 }
 .checkout-area .checkout-left .policy-box p {
     font-size: 1.4rem;
     color: #758A80;
-    margin-top: 1.5rem;
+    margin-bottom: 1rem;
     line-height: 2.5rem;
+}
+.checkout-area .checkout-left .policy-box p:last-child {
+    margin-bottom: 0rem;
 }
 .checkout-area .checkout-right .price-details ul li p {
     font-size: 1.6rem;
@@ -800,6 +862,9 @@ a {
 }
 .checkout-area .checkout-right .convenience-box ul:first-child li p {
     font-size: 1.8rem;
+}
+.checkout-area .checkout-right .convenience-box ul:last-child li p {
+    font-weight: 500;
 }
 .checkout-area .checkout-right .convenience-box ul:first-child {
     margin-bottom: 1rem;
@@ -1150,10 +1215,10 @@ a {
         position: absolute;
         left: 50%;
         top: 50%;
-        transform: translate(-50%, -8%);
+        transform: translate(-50%, -20%);
     }
     .header-area .header-middle img {
-        max-width: 80px;
+        max-width: 9rem;
     }
     .header-area .header-box {
         padding: 2rem 2rem;

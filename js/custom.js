@@ -6,10 +6,10 @@ document.addEventListener("DOMContentLoaded", function () {
     speed: 800,                  
     spaceBetween: 25,
 
-    // autoplay: {
-    //   delay: 4000,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -108,9 +108,14 @@ document.addEventListener("DOMContentLoaded", function () {
         cartDetails.style.display = "none";
         cartEmpty.style.display = "flex";
 
-        // Optionally reset the form and disable button
+        // Reset form
         form.reset();
         updateButtonState();
+
+        // HIDE AVAILABLE SLOT
+        const availableSlot = document.querySelector(".available-slot");
+        availableSlot.style.display = "none";
+        
     });
 });
 
@@ -121,6 +126,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const incBtn = document.querySelector(".inc-btn");
     const durationText = document.querySelector(".duration");
     const discountBox = document.querySelector(".discount-btn");
+    const cartClear = document.getElementById("cart-clear");
+    const availableSlot = document.querySelector(".available-slot");
 
     let duration = 1; // default 1 hour
 
@@ -149,9 +156,40 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+    // RESET WHEN CART IS CLEARED
+    cartClear.addEventListener("click", function () {
+        duration = 1;
+        updateDurationUI();
+
+        // Hide discount & available slots
+        discountBox.style.display = "none";
+        availableSlot.style.display = "none";
+    });
+
     // Initial state
+    discountBox.style.display = "none";
+    availableSlot.style.display = "none";
     updateDurationUI();
 });
+
+
+//Available slot show
+document.addEventListener("DOMContentLoaded", function () {
+    const dateInput = document.querySelector('input[type="date"]');
+    const availableSlot = document.querySelector(".available-slot");
+
+    // Hide initially
+    availableSlot.style.display = "none";
+
+    dateInput.addEventListener("change", function () {
+        if (this.value) {
+            availableSlot.style.display = "block";
+        } else {
+            availableSlot.style.display = "none";
+        }
+    });
+});
+
 //Add to Cart Logic End
 
 
