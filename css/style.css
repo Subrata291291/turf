@@ -180,7 +180,7 @@ a {
     animation: floatLeftRight 8s ease-in-out infinite;
 }
 .banner-area .banner-box ul li:last-child img {
-    animation: floatLeftRight 8s ease-in-out infinite;
+    animation: floatLeftRight 4s ease-in-out infinite;
 }
 @keyframes floatTopBottom {
   0% {
