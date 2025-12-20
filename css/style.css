@@ -646,9 +646,12 @@ a {
 .cart-area .cart-left .cart-form .form-box label {
     font-size: 1.6rem;
 }
+.cart-area .cart-left .cart-form .form-box .available-slot {
+    margin-top: 2rem;
+}
 .cart-area .cart-left .cart-form .form-box .available-slot p {
     font-size: 1.6rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 .cart-area .cart-left .cart-form .form-box .available-slot ul {
     flex-wrap: wrap;

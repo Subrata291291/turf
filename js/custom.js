@@ -266,6 +266,13 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 // Partial payment JS
 
+//Inactive minutes
+// const timeInput = document.querySelector('input[type="time"]');
+// timeInput.addEventListener("change", function () {
+//     const [hour] = this.value.split(":");
+//     this.value = `${hour}:00`;
+// });
+
 
 /* Disable Right Click */
 document.addEventListener('contextmenu', function (e) {
