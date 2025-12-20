@@ -878,22 +878,33 @@ a {
 .checkout-area .checkout-right .convenience-box p {
     font-size: 1.6rem;
 }
+.checkout-area .checkout-right .payment-type {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    font-size: 1.6rem;
+}
+.checkout-area .checkout-right .form-check-input:checked {
+    background-color: var(--ss-primary);
+    border-color: var(--ss-primary);
+}
 .checkout-area .checkout-right .convenience-box ul:first-child li p {
     font-size: 1.8rem;
 }
 .checkout-area .checkout-right .convenience-box ul:last-child li p {
     font-weight: 500;
 }
-.checkout-area .checkout-right .convenience-box ul:first-child {
-    margin-bottom: 1rem;
-}
 .checkout-area .checkout-right .convenience-box ul:last-child {
     margin-top: 1rem;
+}
+.checkout-area .checkout-right .convenience-box .total-payment p {
+    font-size: 1.8rem;
+    font-weight: 500;
 }
 .checkout-area .checkout-right .convenience-box {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
     margin-top: 3rem;
 }
 .checkout-area .checkout-right .convenience-box ul:last-child li p {

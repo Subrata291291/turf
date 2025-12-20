@@ -270,14 +270,18 @@
                             </ul>
                             <ul class="d-flex align-items-center justify-content-between">
                                 <li>
-                                    <p><span><i class="fa-solid fa-indian-rupee-sign"></i></span> INR 3000</p>
+                                    <p><span><i class="fa-solid fa-indian-rupee-sign"></i></span> INR 3000</p>
                                 </li>
                             </ul>
-                            <div class="discount-btn">
-                                <button class="common-btn w-100">Wohoo! You can now avail INR600 OFF 🎉.</button>
+                            <div class="discount-btn" style="display:none;">
+                              <button class="common-btn w-100">
+                                Wohoo! You can now avail INR <span id="discountAmount">0</span> OFF 🎉
+                              </button>
                             </div>
                             <div class="proceed-btn">
-                                <button class="common-btn w-100" onclick="window.location.href='checkout.html'">Proceed INR <span>3000.00</span></button>
+                                <button class="common-btn w-100" onclick="window.location.href='/checkout.html'">
+                                  Proceed INR <span id="proceedAmount">3000.00</span>
+                                </button>
                             </div>
                         </div>
                     </div>

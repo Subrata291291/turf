@@ -189,7 +189,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
-
 //Add to Cart Logic End
 
 
@@ -215,7 +214,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-//Tab Js for my accoun page
+//Tab Js for my account page
 document.addEventListener("DOMContentLoaded", function () {
     const menuItems = document.querySelectorAll(".profile-menu li");
     const boxes = document.querySelectorAll(".booking-box, .edit-box");
@@ -240,37 +239,63 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 //Tab Js for my accoun page
 
+// Partial payment JS
+document.addEventListener("DOMContentLoaded", function () {
+
+  const fullPaymentRadio = document.getElementById("fullPayment");
+  const partialPaymentRadio = document.getElementById("partialPayment");
+  const totalAmountEl = document.getElementById("totalAmount");
+  const payableAmountEl = document.getElementById("payableAmount");
+
+  const totalAmount = parseFloat(totalAmountEl.innerText);
+
+  function updatePayableAmount() {
+    if (partialPaymentRadio.checked) {
+      payableAmountEl.innerText = (totalAmount / 2).toFixed(2);
+    } else {
+      payableAmountEl.innerText = totalAmount.toFixed(2);
+    }
+  }
+
+  // Event listeners
+  fullPaymentRadio.addEventListener("change", updatePayableAmount);
+  partialPaymentRadio.addEventListener("change", updatePayableAmount);
+
+  // Initial load
+  updatePayableAmount();
+});
+// Partial payment JS
 
 
-// /* Disable Right Click */
-// document.addEventListener('contextmenu', function (e) {
-//     e.preventDefault();
-// });
+/* Disable Right Click */
+document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+});
 
-// /* Disable common DevTools keys */
-// document.addEventListener('keydown', function (e) {
+/* Disable common DevTools keys */
+document.addEventListener('keydown', function (e) {
 
-//     // F12
-//     if (e.keyCode === 123) {
-//         e.preventDefault();
-//         return false;
-//     }
+    // F12
+    if (e.keyCode === 123) {
+        e.preventDefault();
+        return false;
+    }
 
-//     // Ctrl+Shift+I / J / C
-//     if (e.ctrlKey && e.shiftKey && ['I', 'J', 'C'].includes(e.key.toUpperCase())) {
-//         e.preventDefault();
-//         return false;
-//     }
+    // Ctrl+Shift+I / J / C
+    if (e.ctrlKey && e.shiftKey && ['I', 'J', 'C'].includes(e.key.toUpperCase())) {
+        e.preventDefault();
+        return false;
+    }
 
-//     // Ctrl+U (View Source)
-//     if (e.ctrlKey && e.key.toUpperCase() === 'U') {
-//         e.preventDefault();
-//         return false;
-//     }
+    // Ctrl+U (View Source)
+    if (e.ctrlKey && e.key.toUpperCase() === 'U') {
+        e.preventDefault();
+        return false;
+    }
 
-//     // Ctrl+S (Save Page)
-//     if (e.ctrlKey && e.key.toUpperCase() === 'S') {
-//         e.preventDefault();
-//         return false;
-//     }
-// });
+    // Ctrl+S (Save Page)
+    if (e.ctrlKey && e.key.toUpperCase() === 'S') {
+        e.preventDefault();
+        return false;
+    }
+});

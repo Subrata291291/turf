@@ -216,16 +216,28 @@
                                     <p style="color: green;">INR -70.00</p>
                                 </li>
                             </ul>
-                            <ul class="d-flex align-items-center justify-content-between">
-                                <li>
-                                    <p>Total Price</p>
-                                </li>
-                                <li>
-                                    <p>INR 2930</p>
-                                </li>
+                            <ul class="d-flex align-items-center justify-content-between total-payment">
+                              <li><p>Total Price</p></li>
+                              <li><p>INR <span id="totalAmount">2930</span></p></li>
                             </ul>
+                              <div class="payment-type">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="paymentType" id="fullPayment" checked>
+                                  <label class="form-check-label" for="fullPayment">
+                                    Full Payment
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="paymentType" id="partialPayment">
+                                  <label class="form-check-label" for="partialPayment">
+                                    Partial Payment
+                                  </label>
+                                </div>
+                              </div>
                             <div class="proceed-btn">
-                                <button class="common-btn w-100">Proceed INR <span>3000.00</span></button>
+                              <button class="common-btn w-100">
+                                Proceed INR <span id="payableAmount">2930.00</span>
+                              </button>
                             </div>
                         </div>
                     </div>
