@@ -421,6 +421,9 @@ a {
     max-width: 76rem;
     margin-right: auto;
 }
+.turf-details-area .turf-left .swiper-slide img {
+    width: 100%;
+}
 .turf-right .location-box h3 {
     font-size: 1.8rem;
     font-weight: 500;
