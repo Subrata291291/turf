@@ -72,6 +72,9 @@ a {
     padding: 3rem 6.3rem;
     border-radius: 2rem;
 }
+.header-area .header-box .header-middle img {
+    width: 11rem;
+}
 .header-area .header-box .header-left ul {
     gap: 3rem;
 }
@@ -90,7 +93,7 @@ a {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -8%);
+    transform: translate(-50%, -16%);
 }
 .header-area .header-right ul .social-icons {
    gap: 3rem; 
@@ -1260,7 +1263,7 @@ a {
         transform: translate(-50%, -20%);
     }
     .header-area .header-middle img {
-        max-width: 9rem;
+        max-width: 10rem;
     }
     .header-area .header-box {
         padding: 2rem 2rem;
