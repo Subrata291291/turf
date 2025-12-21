@@ -660,7 +660,7 @@ a {
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: start;
-    row-gap: 3rem;
+    row-gap: 2rem;
     padding: 0rem;
 }
 .cart-area .cart-left .cart-form .form-box .available-slot ul li a {
@@ -677,6 +677,39 @@ a {
     color: #000;
     background-color: red;
     border-radius: 0.5rem;
+}
+.cart-area .cart-left .cart-form .form-box .available-slot .slot-list li label {
+  cursor: pointer;
+}
+.cart-area .cart-left .cart-form .form-box .available-slot .slot-list input {
+  display: none;
+}
+.cart-area .cart-left .cart-form .form-box .available-slot .slot-list span {
+  display: block;
+  padding: 8px 14px;
+  border-radius: 6px;
+  background: #f1f3f5;
+  font-size: 14px;
+  transition: 0.3s;
+  border: 1px solid transparent;
+}
+/* Selected */
+.cart-area .cart-left .cart-form .form-box .available-slot .slot-list input:checked + span {
+  background: var(--ss-primary);
+  color: #fff;
+  border-color: var(--ss-primary);
+}
+/* Hover */
+.cart-area .cart-left .cart-form .form-box .available-slot .slot-list li:not(.booked-slot) span:hover {
+  background: #e0e7ff;
+  color: #000;
+}
+/* Booked slot */
+.cart-area .cart-left .cart-form .form-box .available-slot .booked-slot span {
+  background: #e9ecef;
+  color: #adb5bd;
+  cursor: not-allowed;
+  text-decoration: line-through;
 }
 .cart-area .cart-left .cart-form .submit-btn {
     border: none;
